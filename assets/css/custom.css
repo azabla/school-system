@@ -1,0 +1,73 @@
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3VzdG9tLmNzcyIsInNvdXJjZXMiOlsiY3VzdG9tLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9 */
+
+/*# sourceMappingURL=custom.css.map */
+
+.grandKGReport-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.grandKGReport-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grandKGReport-logo {
+    height: 100px;
+}
+
+.grandKGReport-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.grandKGReport-subtitle {
+    font-size: 18px;
+}
+
+.grandKGReport-student {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.grandKGReport-table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.grandKGReport-keys {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    background-color: #f9fdf9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    line-height: 1.0;
+    color: #333;
+}
+
+.grandKGReport-keys u {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.grandKGReport-keys span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .grandKGReport-logo {
+        height: 70px;
+    }
+    .grandKGReport-title {
+        font-size: 20px;
+    }
+    .grandKGReport-subtitle {
+        font-size: 16px;
+    }
+}
