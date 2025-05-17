@@ -5,9 +5,9 @@ class Student extends CI_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->model('main_model');
+        $this->load->library('secure');
         ob_start();
         $this->load->helper('cookie');
-        $this->load->library('secure');
         $userLevel = userLevel();
         $uperStuDE=$this->db->query("SELECT * from usergrouppermission where usergroup='".$_SESSION['usertype']."' and tableName='Student' and allowed='StudentDE' order by id ASC ");  
         if($this->session->userdata('username') == '' || $uperStuDE->num_rows() < 1 || $userLevel!='1'){
