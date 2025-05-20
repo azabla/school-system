@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -17,11 +17,11 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy project with rsync
         run: |
-          rsync -avz --delete \
+          rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" --delete \
             --exclude=".git" \
             --exclude=".github" \
             ./ ${{ secrets.USER }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIR }}
