@@ -121,7 +121,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <section id="" class="col-md-6">
           <div class="ccr-gallery-ttile">
             <span></span>
-            <p>Vision Statement of Diamond Academy updated 101</p>
+            <p>Vision Statement of Diamond Academy updated last of last</p>
           </div><br>
           <section class="">
             <div class="featured-sports-news-post">
